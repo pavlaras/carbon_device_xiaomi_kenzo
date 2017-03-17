@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/init.d/89bsod:system/etc/init.d/89bsod
 
 
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8952 \
