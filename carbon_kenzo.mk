@@ -13,6 +13,10 @@
 # limitations under the License.
 #
 
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+
+# Inherit device configuration
 $(call inherit-product, device/xiaomi/kenzo/full_kenzo.mk)
 
 # Inherit some common CARBON stuff.
