@@ -1,1 +1,3 @@
 add_lunch_combo carbon_kenzo-userdebug
+add_lunch_combo carbon_kenzo-user
+add_lunch_combo carbon_kenzo-eng
