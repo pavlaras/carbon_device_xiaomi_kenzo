@@ -1,1 +1,10 @@
 
+[
+ {
+   "remote"     : "github",
+   "repository" : "rocknegi/kernel_msm8956",
+   "target_path": "kernel/xiaomi/msm8956",
+   "revision"   : "n2"
+ }
+ 
+]
