@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     vold.fstab \
     init.class_main.sh \
-    init.qcom.post_boot.sh \
+    init.qcom.power.rc \
     init.qcom.qseecomd.sh \
     init.qcom.zram.sh \
     init.qcom.rc \
