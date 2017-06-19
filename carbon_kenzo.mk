@@ -46,3 +46,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := kenzo,kate
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carbon.maintainer="rocknegi"
