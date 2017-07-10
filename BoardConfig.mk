@@ -49,7 +49,7 @@ TARGET_USES_64_BIT_BINDER := true
 ENABLE_CPUSETS := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 ramoops_memreserve=4M androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -88,6 +88,7 @@ AUDIO_FEATURE_ENABLED_RECORD_PLAY_CONCURRENCY := true
 AUDIO_FEATURE_ENABLED_SOURCE_TRACKING := true
 BOARD_SUPPORTS_SOUND_TRIGGER := false
 AUDIO_FEATURE_ENABLED_VBAT_MONITOR := true
+
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_USES_ALSA_AUDIO := true
 TARGET_USES_QCOM_MM_AUDIO := true
@@ -143,15 +144,14 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 TARGET_USES_C2D_COMPOSITION := true
-TARGET_USES_OVERLAY := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
-MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
+
+MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
+
 
 TARGET_USES_ION := true
-TARGET_USES_NEW_ION_API := true
 
 USE_OPENGL_RENDERER := true
-BOARD_USE_LEGACY_UI := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
