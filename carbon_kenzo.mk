@@ -25,10 +25,13 @@ PRODUCT_COPY_FILES := device/xiaomi/kenzo/configs/apns-full-conf.xml:system/etc/
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common Nitrogen stuff.
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+# Inherit some common CARBON stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
 
-PRODUCT_NAME := nitrogen_kenzo
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+
+PRODUCT_NAME := carbon_kenzo
 PRODUCT_DEVICE := kenzo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
@@ -43,3 +46,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := kenzo,kate
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carbon.maintainer="rocknegi"

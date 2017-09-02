@@ -1,1 +1,1 @@
-add_lunch_combo nitrogen_kenzo-userdebug
+add_lunch_combo carbon_kenzo-userdebug
