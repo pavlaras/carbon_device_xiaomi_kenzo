@@ -261,6 +261,7 @@ persist.fuse_sdcard=true
 # Optimal dex2oat threads for faster app installation
 ro.sys.fw.dex2oat_thread_count=4
 
+
 # Camera Force HAL1 in these packages
 camera.hal1.packagelist=com.skype.raider,com.google.android.GoogleCamera,com.tencent.mm
 
@@ -288,4 +289,6 @@ persist.data.df.agg.dl_size=4096
 persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
+
+ro.sys.sdcardfs=false
 
