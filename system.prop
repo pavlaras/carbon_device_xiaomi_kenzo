@@ -104,7 +104,6 @@ ro.hwui.text_large_cache_height=1024
 ro.qualcomm.cabl=2
 
 # Bluetooth
-bluetooth.hfp.client=1
 qcom.bluetooth.soc=smd
 ro.btconfig.if=smd
 ro.btconfig.dev=/dev/smd3
