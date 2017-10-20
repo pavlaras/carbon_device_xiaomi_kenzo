@@ -329,7 +329,10 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
+
+    fingerprintd \
+    fingerprint.msm8952
+
 
 # FM radio
 PRODUCT_PACKAGES += \
@@ -413,10 +416,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=480
 
-<<<<<<< HEAD
-# setup dalvik vm configs.
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-=======
 # Default OMX service to non-Treble
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.media.treble_omx=false
@@ -429,7 +428,7 @@ PRODUCT_PACKAGES += \
 # setup dalvik vm and hwui configs.
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
->>>>>>> 7d61577... kenzo: build HIDL HALs and copy HIDL manifest
+
 
 # Board platforms lists to be used for
 # TARGET_BOARD_PLATFORM specific featurization
