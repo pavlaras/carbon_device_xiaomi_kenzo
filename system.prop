@@ -224,8 +224,8 @@ ro.vendor.extension_library=libqti-perfd-client.so
 persist.qfp=false
 
 # min/max cpu in core control
-ro.core_ctl_min_cpu=2
-ro.core_ctl_max_cpu=4
+#ro.core_ctl_min_cpu=2
+#ro.core_ctl_max_cpu=4
 
 # Enable B service adj transition by default
 ro.sys.fw.bservice_enable=true
